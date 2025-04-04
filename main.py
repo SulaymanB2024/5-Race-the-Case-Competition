@@ -2,7 +2,11 @@
 Main entry point for generating BFC SEC 10-K reports and strategic summary.
 """
 
-from report_generator import generate_one_year_report, generate_five_year_report, generate_ten_year_report
+from report_generator import (
+    generate_one_year_report,
+    generate_five_year_report,
+    generate_ten_year_report
+)
 from strategic_summary import get_strategic_summary
 
 def main():
