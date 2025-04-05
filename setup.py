@@ -1,0 +1,32 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="race-the-case",
+    version="0.1",
+    packages=find_packages(),
+    install_requires=[
+        "numpy>=1.21.0",
+        "pandas>=1.3.0",
+        "matplotlib>=3.4.0",
+        "seaborn>=0.11.0",
+        "jinja2>=3.0.0",
+        "reportlab>=3.6.0",
+        "weasyprint>=53.0",
+        "typing-extensions>=4.0.0",
+        "pytest>=6.2.0",
+        "pytest-cov>=2.12.0",
+        "pytest-mock>=3.6.1",
+        "pytest-randomly>=3.8.0",
+        "black>=21.5b2",
+        "mypy>=0.910",
+        "python-dotenv>=0.19.0",
+        "openpyxl>=3.1.0",
+        "scikit-learn>=1.0.0",
+        "pylint>=2.8.0",
+        "pydantic>=1.8.0",
+        "python-dateutil>=2.8.0",
+        "tqdm>=4.62.0",
+        "PyPDF2>=2.0.0"
+    ],
+    python_requires=">=3.8",
+)

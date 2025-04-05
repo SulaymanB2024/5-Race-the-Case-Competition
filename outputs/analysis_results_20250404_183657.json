@@ -1,0 +1,50 @@
+{
+    "financial_metrics": {
+        "roi": 36000.0,
+        "market_growth": 0.08933970937500003,
+        "operating_margin": 0.12,
+        "revenue_growth": 0
+    },
+    "ratios": {
+        "current": {
+            "profitability": {
+                "gross_margin": 0.6,
+                "operating_margin": 0.12,
+                "net_margin": 0.09,
+                "roce": 0.09540846750149076
+            },
+            "efficiency": {
+                "asset_turnover": 0.5505849965588437,
+                "inventory_turnover": 4.804804804804805,
+                "receivables_turnover": 10.0
+            },
+            "liquidity": {
+                "current_ratio": 2.100525131282821,
+                "quick_ratio": 1.8507126781695424,
+                "cash_ratio": 0.6001500375093773
+            },
+            "solvency": {
+                "debt_to_equity": 0.449438202247191,
+                "interest_coverage": 13.0,
+                "debt_to_ebitda": 2.1666666666666665
+            }
+        },
+        "changes": {
+            "profitability": {},
+            "efficiency": {},
+            "liquidity": {},
+            "solvency": {}
+        }
+    },
+    "market_projection": [
+        0.07,
+        0.07135922330097089,
+        0.0727448392873975,
+        0.07415736043860911,
+        0.07559730918498986,
+        0.07706521810120326
+    ],
+    "report_paths": {
+        "financial": "outputs/financial_summary.pdf"
+    }
+}

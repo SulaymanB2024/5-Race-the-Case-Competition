@@ -1,0 +1,55 @@
+{
+    "financial_metrics": {
+        "roi": 90140.0,
+        "market_growth": 0.11358905906250003,
+        "operating_margin": 0.0956,
+        "revenue_growth": 0
+    },
+    "ratios": {
+        "current": {
+            "profitability": {
+                "gross_margin": 0.6176380323268933,
+                "operating_margin": 0.09552655423377078,
+                "net_margin": 0.06586677578698155,
+                "roce": 0.15553651949411665
+            },
+            "efficiency": {
+                "asset_turnover": 1.0531289438852465,
+                "inventory_turnover": 3.2334548600383117,
+                "receivables_turnover": 9.198279338620782
+            },
+            "liquidity": {
+                "current_ratio": 2.042259732969809,
+                "quick_ratio": 1.3934084439276695,
+                "cash_ratio": 0.8745439236598371
+            },
+            "solvency": {
+                "debt_to_equity": 0.6665212649945474,
+                "interest_coverage": 9.770553064275036,
+                "debt_to_ebitda": 1.9483018430508865
+            }
+        },
+        "changes": {
+            "profitability": {},
+            "efficiency": {},
+            "liquidity": {},
+            "solvency": {}
+        }
+    },
+    "market_projection": [
+        0.089,
+        0.09072815533980583,
+        0.09248986709397683,
+        0.09428578684337445,
+        0.09611657882091569,
+        0.09798292015724416
+    ],
+    "report_paths": {
+        "one_year": "outputs/10k_report_one_year.pdf",
+        "five_year": "outputs/10k_report_five_year.pdf",
+        "ten_year": "outputs/10k_report_ten_year.pdf",
+        "strategic": "outputs/strategic_analysis.pdf",
+        "digital": "outputs/digital_transformation.pdf",
+        "sustainability": "outputs/sustainability.pdf"
+    }
+}

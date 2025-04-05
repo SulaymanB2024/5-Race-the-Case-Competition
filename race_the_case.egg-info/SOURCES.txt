@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+race_the_case.egg-info/PKG-INFO
+race_the_case.egg-info/SOURCES.txt
+race_the_case.egg-info/dependency_links.txt
+race_the_case.egg-info/requires.txt
+race_the_case.egg-info/top_level.txt
