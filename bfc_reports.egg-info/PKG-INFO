@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: bfc-reports
+Version: 0.1.0
+License-File: LICENSE
+Requires-Dist: reportlab
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Dynamic: license-file
+Dynamic: requires-dist

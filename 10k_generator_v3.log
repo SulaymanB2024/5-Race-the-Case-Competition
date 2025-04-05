@@ -1,0 +1,202 @@
+2025-04-05 01:04:14,394 - __main__ - [INFO] - ============================================================
+2025-04-05 01:04:14,394 - __main__ - [INFO] - 🚀 Starting BFC 10-K Projection Report Generator (v3)...
+2025-04-05 01:04:14,394 - __main__ - [INFO] - ============================================================
+2025-04-05 01:04:14,395 - __main__ - [INFO] - Ensuring output directory exists: /workspaces/5-Race-the-Case-Competition/outputs_v3
+2025-04-05 01:04:14,395 - __main__ - [INFO] - Loading baseline financial data...
+2025-04-05 01:04:14,395 - __main__ - [INFO] - Baseline data (Year 2018) loaded successfully. Found 8 metrics.
+2025-04-05 01:04:14,395 - __main__ - [INFO] - Calculating 1, 5, 10-year financial projections...
+2025-04-05 01:04:14,395 - __main__ - [INFO] - Financial projections calculated.
+2025-04-05 01:04:14,395 - __main__ - [INFO] - Initializing PDF Report Generator...
+2025-04-05 01:04:14,396 - __main__ - [INFO] - Generating 10-K reports for timeframes: ['ten_year', 'one_year', 'five_year']...
+2025-04-05 01:04:14,424 - src.reports.report_generator - [ERROR] - Critical error occurred during PDF build for one_year: list index out of range
+Traceback (most recent call last):
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 227, in _generate_single_10k_report
+    doc.build(story)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 1083, in build
+    self.handle_flowable(flowables)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 946, in handle_flowable
+    if not frame.add(S[0], canv, trySplit=0):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/frames.py", line 201, in _add
+    flowable.drawOn(canv, self._x + self._leftExtraIndent, y, _sW=aW-w)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 112, in drawOn
+    self._drawOn(canvas)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 93, in _drawOn
+    self.draw()#this is the bit you overload
+    ^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2286, in draw
+    self._drawBkgrnd()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2352, in _drawBkgrnd
+    y0 = rowpositions[sr]
+         ~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+2025-04-05 01:04:14,433 - src.reports.report_generator - [ERROR] - Critical error occurred during PDF build for five_year: list index out of range
+Traceback (most recent call last):
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 227, in _generate_single_10k_report
+    doc.build(story)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 1083, in build
+    self.handle_flowable(flowables)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 946, in handle_flowable
+    if not frame.add(S[0], canv, trySplit=0):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/frames.py", line 201, in _add
+    flowable.drawOn(canv, self._x + self._leftExtraIndent, y, _sW=aW-w)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 112, in drawOn
+    self._drawOn(canvas)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 93, in _drawOn
+    self.draw()#this is the bit you overload
+    ^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2286, in draw
+    self._drawBkgrnd()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2352, in _drawBkgrnd
+    y0 = rowpositions[sr]
+         ~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+2025-04-05 01:04:14,440 - src.reports.report_generator - [ERROR] - Critical error occurred during PDF build for ten_year: list index out of range
+Traceback (most recent call last):
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 227, in _generate_single_10k_report
+    doc.build(story)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 1083, in build
+    self.handle_flowable(flowables)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 946, in handle_flowable
+    if not frame.add(S[0], canv, trySplit=0):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/frames.py", line 201, in _add
+    flowable.drawOn(canv, self._x + self._leftExtraIndent, y, _sW=aW-w)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 112, in drawOn
+    self._drawOn(canvas)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 93, in _drawOn
+    self.draw()#this is the bit you overload
+    ^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2286, in draw
+    self._drawBkgrnd()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2352, in _drawBkgrnd
+    y0 = rowpositions[sr]
+         ~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+2025-04-05 01:04:14,443 - src.reports.report_generator - [ERROR] - Report generation failed for timeframe 'one_year': Failed building one_year PDF: list index out of range
+Traceback (most recent call last):
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 227, in _generate_single_10k_report
+    doc.build(story)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 1083, in build
+    self.handle_flowable(flowables)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 946, in handle_flowable
+    if not frame.add(S[0], canv, trySplit=0):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/frames.py", line 201, in _add
+    flowable.drawOn(canv, self._x + self._leftExtraIndent, y, _sW=aW-w)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 112, in drawOn
+    self._drawOn(canvas)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 93, in _drawOn
+    self.draw()#this is the bit you overload
+    ^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2286, in draw
+    self._drawBkgrnd()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2352, in _drawBkgrnd
+    y0 = rowpositions[sr]
+         ~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 189, in generate_10k_reports
+    report_paths[timeframe] = future.result()
+                              ^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/python/3.12.1/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 239, in _generate_single_10k_report
+    raise ReportRenderingError(f"Failed building {timeframe} PDF: {str(e)}") from e
+src.reports.report_generator.ReportRenderingError: Failed building one_year PDF: list index out of range
+2025-04-05 01:04:14,447 - src.reports.report_generator - [ERROR] - Report generation failed for timeframe 'five_year': Failed building five_year PDF: list index out of range
+Traceback (most recent call last):
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 227, in _generate_single_10k_report
+    doc.build(story)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 1083, in build
+    self.handle_flowable(flowables)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 946, in handle_flowable
+    if not frame.add(S[0], canv, trySplit=0):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/frames.py", line 201, in _add
+    flowable.drawOn(canv, self._x + self._leftExtraIndent, y, _sW=aW-w)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 112, in drawOn
+    self._drawOn(canvas)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 93, in _drawOn
+    self.draw()#this is the bit you overload
+    ^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2286, in draw
+    self._drawBkgrnd()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2352, in _drawBkgrnd
+    y0 = rowpositions[sr]
+         ~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 189, in generate_10k_reports
+    report_paths[timeframe] = future.result()
+                              ^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/python/3.12.1/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 239, in _generate_single_10k_report
+    raise ReportRenderingError(f"Failed building {timeframe} PDF: {str(e)}") from e
+src.reports.report_generator.ReportRenderingError: Failed building five_year PDF: list index out of range
+2025-04-05 01:04:14,448 - src.reports.report_generator - [ERROR] - Report generation failed for timeframe 'ten_year': Failed building ten_year PDF: list index out of range
+Traceback (most recent call last):
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 227, in _generate_single_10k_report
+    doc.build(story)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 1083, in build
+    self.handle_flowable(flowables)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/doctemplate.py", line 946, in handle_flowable
+    if not frame.add(S[0], canv, trySplit=0):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/frames.py", line 201, in _add
+    flowable.drawOn(canv, self._x + self._leftExtraIndent, y, _sW=aW-w)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 112, in drawOn
+    self._drawOn(canvas)
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 93, in _drawOn
+    self.draw()#this is the bit you overload
+    ^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2286, in draw
+    self._drawBkgrnd()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/reportlab/platypus/tables.py", line 2352, in _drawBkgrnd
+    y0 = rowpositions[sr]
+         ~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 189, in generate_10k_reports
+    report_paths[timeframe] = future.result()
+                              ^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/python/3.12.1/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/5-Race-the-Case-Competition/src/analysis/src/reports/report_generator.py", line 239, in _generate_single_10k_report
+    raise ReportRenderingError(f"Failed building {timeframe} PDF: {str(e)}") from e
+src.reports.report_generator.ReportRenderingError: Failed building ten_year PDF: list index out of range
+2025-04-05 01:04:14,449 - src.reports.report_generator - [ERROR] - Some 10-K reports failed: {'one_year': 'FAILED: ReportRenderingError', 'five_year': 'FAILED: ReportRenderingError', 'ten_year': 'FAILED: ReportRenderingError'}
+2025-04-05 01:04:14,449 - __main__ - [INFO] - ------------------------------------------------------------
+2025-04-05 01:04:14,449 - __main__ - [ERROR] - ❌ No reports were generated successfully.
+2025-04-05 01:04:14,449 - __main__ - [INFO] - ============================================================
+2025-04-05 01:04:14,449 - __main__ - [INFO] - 🏁 BFC 10-K Projection Report Generator Finished.
+2025-04-05 01:04:14,450 - __main__ - [INFO] - ============================================================

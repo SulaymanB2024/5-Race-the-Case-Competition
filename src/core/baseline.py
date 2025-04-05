@@ -2,7 +2,7 @@
 Provides baseline financial data and company description from the 2018 10-K.
 """
 
-from bfc_reports.config import BASELINE_DATA
+from src.core.config import BASELINE_DATA
 
 def get_baseline_data():
     """

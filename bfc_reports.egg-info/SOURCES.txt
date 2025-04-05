@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bfc_reports.egg-info/PKG-INFO
+bfc_reports.egg-info/SOURCES.txt
+bfc_reports.egg-info/dependency_links.txt
+bfc_reports.egg-info/requires.txt
+bfc_reports.egg-info/top_level.txt
+src/__init__.py
+src/core/__init__.py
+src/core/baseline.py
+src/core/config.py
+src/reports/__init__.py
