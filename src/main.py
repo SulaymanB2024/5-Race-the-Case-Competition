@@ -140,13 +140,18 @@ def run_analysis(args: argparse.Namespace) -> Dict[str, Any]:
             
         if 'strategic' in args.reports:
             logger.info("Generating strategic analysis")
-            # Create competitive landscape data
-            from config import COMPETITIVE_LANDSCAPE
-            competitive_data = {
-                'leader_1': {'market_share': 0.15, 'growth_rate': 0.06},
-                'leader_2': {'market_share': 0.12, 'growth_rate': 0.05},
-                'challenger_1': {'market_share': 0.09, 'growth_rate': 0.08}
-            }
+            from src.core.config import COMPETITIVE_LANDSCAPE
+            competitive_data = COMPETITIVE_LANDSCAPE
+
+            # Calculate DCF valuation with proper parameters
+            dcf_value = calculate_dcf_valuation(
+                initial_revenue=baseline_data['revenue'],
+                growth_rates=[0.05, 0.05, 0.04, 0.04, 0.03],  # Declining growth rate
+                ebitda_margins=[0.15, 0.155, 0.16, 0.165, 0.17],  # Improving margins
+                wacc=0.09,  # 9% Weighted Average Cost of Capital
+                terminal_growth=0.02,  # 2% terminal growth rate
+                tax_rate=0.25  # 25% tax rate
+            )
             
             strategic_recommendations = generate_strategic_recommendations(
                 market_data=results['market_projection'],
@@ -154,7 +159,8 @@ def run_analysis(args: argparse.Namespace) -> Dict[str, Any]:
             )
             report_paths['strategic'] = report_gen.generate_strategic_analysis(
                 results['market_projection'],
-                competitive_data
+                competitive_data,
+                dcf_valuation=dcf_value
             )
             
         if 'digital' in args.reports:
@@ -166,7 +172,7 @@ def run_analysis(args: argparse.Namespace) -> Dict[str, Any]:
             
         if 'sustainability' in args.reports:
             logger.info("Generating sustainability report")
-            from config import SUSTAINABILITY_TARGETS
+            from src.core.config import SUSTAINABILITY_TARGETS
             report_paths['sustainability'] = report_gen.generate_sustainability_report(
                 SUSTAINABILITY_TARGETS['one_year'],
                 SUSTAINABILITY_TARGETS

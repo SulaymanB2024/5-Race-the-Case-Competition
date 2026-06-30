@@ -1,17 +1,17 @@
 """
-Strategic analysis and recommendations generator.
-
-This module provides functionality for generating strategic recommendations
-based on market data and financial metrics.
+Strategic analysis and recommendations module.
 """
 
-from typing import Dict, Any, List, Tuple, Union
-import numpy as np
+from typing import Dict, List, Union, Any
 from dataclasses import dataclass
-from config import (
+from datetime import datetime
+from pathlib import Path
+
+from src.core.config import (
     COMPETITIVE_MATRIX,
+    COMPETITIVE_LANDSCAPE,
     MARKET_PENETRATION,
-    DIGITAL_IMPACT,
+    DIGITAL_METRICS,
     SUSTAINABILITY_TARGETS
 )
 

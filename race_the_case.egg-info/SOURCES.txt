@@ -6,3 +6,15 @@ race_the_case.egg-info/SOURCES.txt
 race_the_case.egg-info/dependency_links.txt
 race_the_case.egg-info/requires.txt
 race_the_case.egg-info/top_level.txt
+src/__init__.py
+src/main.py
+src/analysis/__init__.py
+src/analysis/quantitative_model.py
+src/analysis/strategic_summary.py
+src/core/__init__.py
+src/core/baseline.py
+src/core/config.py
+src/reports/__init__.py
+src/reports/report_generator.py
+src/utils/__init__.py
+src/utils/output_handler.py
